@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="m-1">
+        <img src="img/logo.png" alt="">
+    </nav>
+
+    <section>
+        <div class="row m-3">
+            <div class="col-7 col-sm-1">
+            <textarea name="text" id="text" class="text-area" cols="30" rows="10" placeholder="Inserte el texto aqui"></textarea>
+            <p class="error m-1" id="error"><img src="img/signo.png" alt="icon"> Solo letras minusculas y sin acento</p>
+            <div class="row m-1">
+                <div class="col-5 col-sm-2 m-1">
+                    <button class="btn btn-primary" onclick="encriptar()">Encriptador</button>
+                </div>
+                <div class="col-5 col-sm-2 m-1">
+                    <button class="btn btn-info" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4 col-sm-2 m-1 card card2">
+            <img src="img/1.png" alt="ImagenDerecha" class="imagen image" id="imagen">
+            <section class="row m-4 left" id="resultado">
+                <h1 class="center">Ningun mensaje fue encontrado</h1>
+                <p class="center">Ingrese el textoque desea encriptar o Desencriptar</p>
+            </section>
+            <div class="col-12">
+                <button id="copiar" class="btn-info p-1 copiar" hidden >Copiar</button>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
